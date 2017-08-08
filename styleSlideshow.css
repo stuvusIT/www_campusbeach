@@ -1,0 +1,84 @@
+  .slideSection
+         {
+             width: 480px;
+             height: 360px;
+             border: 0px solid;
+             padding: 0;
+             margin: 0;
+             margin-left: -50px;
+             overflow: hidden;
+         }
+         .slideSection img
+         {
+             position: relative;
+             width: 360px;
+             padding: 0;                        
+             margin: 40px 60px 0px 60px;
+             box-shadow: 0 10px 50px grey;
+             float: left;
+             display:inline;
+         }
+         #schieber{
+             position: relative;
+             margin-left: 0px;                          
+             height: 360px;
+             width: 4160px;     /*je bild 600px in der Breite*/
+             display:inline;
+             float: left;
+             margin-top: -40px;
+             transition: all 0.4s ease-in-out;
+         }
+
+         #pfeilRechts
+         {
+             position: relative;
+             top: 50%;
+             left: 89%;
+             width: 10%;
+             height: 15%;
+             margin-top: -7%;
+             border: 0px solid;
+             background-image: url('Fonts/Bilder/Navigation_Slideshow/weiterRechtsGross_MO.png');
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size:100% auto;
+             filter: grayscale(100%);
+             transition: all 0.5s ease-in-out;
+             cursor: pointer;
+             z-index: 999;
+         }
+         #pfeilRechts:hover
+         {
+            filter: grayscale(0%);
+            transition: all 0.2s ease-in-out;
+            background-size: 99%;
+            left: 90%;
+
+         }
+         #pfeilLinks
+         {
+             position: relative;
+             top: 45%;
+             left: 1%;
+             width: 10%;
+             height: 15%;
+             margin-top: -7%;
+             border: 0px solid;
+             background-image: url('Fonts/Bilder/Navigation_Slideshow/weiterLinksGross_MO.png');
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size:100% auto;
+             filter: grayscale(100%);
+             transition: all 0.5s ease-in-out;
+             cursor: pointer;
+             z-index: 999;
+
+         }
+         #pfeilLinks:hover
+         {
+            filter: grayscale(0%);
+            transition: all 0.2s ease-in-out;
+            background-size: 99%;
+             left: 0%
+         }
+	

@@ -1,0 +1,723 @@
+/*  ##############################################################################################     */
+/*  #####################################     Code minimum   #####################################     */
+/*  ##############################################################################################     */
+
+
+             @font-face {
+              font-family: 'Desyrel';
+              src: url('Fonts/DESYREL.ttf') format('truetype');
+            }
+            @font-face {
+              font-family: 'clearFont001';
+              src: url('Fonts/calibri.ttf') format('truetype');
+            }
+
+
+            html, body
+            {
+                padding: 0;
+                margin: 0;
+
+                background-image: url('Fonts/Bilder/Backgrounds/mainBackground.png');
+                background-repeat: repeat;
+                background-position: center;
+               /* background-attachment: fixed;   */
+               background-size: 100% auto;
+                font-size: 16px;
+                font-family: clearFont001;
+                                            
+                transition: background 0.7s ease-in-out;
+                color: #080808;
+            }
+            .clear
+            {
+                clear: both;
+            }
+
+            a
+            {
+                text-decoration: none;
+                color: #000000;
+            }
+            h1, h2, h3, h4, h5 h6
+            {
+                color: #E50069;
+                font-family: Desyrel;
+
+            }
+            h1
+            {
+                font-size: 2.5em;
+            }
+            .PinkeSchrift
+            {
+                color: #E50069;
+            }
+            .DickeSchrift
+            {
+                font-weight: bold;
+            }
+            p
+            {
+                font-size: 1.2em;
+            }
+
+            #stuvusLeiste
+            {
+                width: 100%;
+                height: 50px;
+                background-position: 50% center;
+                background-size: auto 100%;
+                background-image: url('Fonts/Bilder/Backgrounds/stuvusLeiste.png');
+            }
+            /* mainHeader */
+            #primeHeader
+            {
+                position: absolute;
+                top: 50px;
+                width: 60%;
+                height: 250px;
+
+                padding-top:    50px;
+                padding-right:  20%;
+                padding-left:   20%;
+                padding-bottom: 90px;
+
+                /*background-image: url('Fonts/Bilder/Backgrounds/headerBackground.png');*/
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size:  auto 100%;
+            }
+            #headerLogo
+            {
+                position: absolute;
+                top: 10px;
+                left: 25%;
+
+                width: 50%;
+                height: 50%;
+
+
+                background-image: url('Fonts/Bilder/Logos/campusBeach.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:  auto 100%;
+
+                z-index: 10;
+
+            }
+            #headerIconBar
+            {
+                display: none;
+                position: absolute;
+                top: 50px;
+                right: 10%;
+
+                width: 140px;
+                height: 40px;
+
+                margin-top:    0;
+                margin-right:  0;
+                margin-left:   0;
+                margin-bottom: 0;
+
+                padding: 10px;
+
+                z-index: 11;
+
+                background-image: url('Fonts/Bilder/Backgrounds/Transparente/60.png');
+                background-repeat: repeat;
+                background-position: center;
+                background-size:  auto 100%;
+
+            }
+            .HeaderIconBarClass
+            {
+                width: 40px;
+                height: 40px;
+                float: left;
+                padding-left: 15px;
+                padding-right: 15px;
+
+            }
+            .headerWechsel
+            {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 250px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:  120% auto;
+                box-shadow: inset 0px 0 30px 0px rgb(20, 20, 20);
+            }
+            #wechselBild1
+            {
+                z-index: 0;
+                background-image: url('Fonts/Bilder/Backgrounds/headerWechsel1.jpg');
+            }
+            #wechselBild2
+            {
+                z-index: 1;
+                background-image: url('Fonts/Bilder/Backgrounds/headerWechsel2.jpg');
+            }
+            #wechselBild3
+            {
+                z-index: 3;
+                background-image: url('Fonts/Bilder/Backgrounds/headerWechsel3.jpg');
+            }
+
+            /* Navigation */
+            nav
+            {
+                position: relative;
+                width: 90%;
+                height: auto;
+
+                padding-top:    20px;
+                padding-right:  5%;
+                padding-left:   5%;
+                padding-bottom: 40px;
+                transition: background 0.5s ease-in-out;
+                background-image: url("Fonts/Bilder/Backgrounds/Transparente/100zu95.png");
+                z-index: 99;
+            }
+            ul
+            {
+                padding-left: 0px;
+                width: 100%;
+                padding: 0;
+            }
+            li
+            {
+                float: left;
+                width: 100%;
+                text-align: center;
+                list-style: none;
+                margin-left: 0;
+                margin-right: 0%;
+                padding: 0px 0px 20px 0px;
+                cursor: pointer;
+
+                font-size: 1.2em;
+
+            }
+
+
+            #scrollMarkeEvents
+            {
+                margin-top: 550px;
+                margin-left: 20%;
+                width: 80%;
+            }
+
+            /* mainContent*/
+
+            article
+            {
+                padding-left: 0%;
+                padding-bottom: 100px;
+                width: 100%;
+            }
+            #asideOpeningHours
+            {
+                padding-bottom: 50px;
+                width: 100%;
+            }
+            #scrollMarkeLocation
+            {
+                margin-left: 20%;
+                width: 80%;
+            }
+            #locationArticle
+            {
+                background: url('Fonts/Bilder/Backgrounds/Transparente/0.png');
+                background-repeat: no-repeat;
+                background-position: 0% 10%;
+                background-size: 20% auto;
+            }                
+            #neuigkeitenArticle
+            {
+                background: url('Fonts/Bilder/Backgrounds/Transparente/0.png');
+                background-repeat: no-repeat;
+                background-position: 0% 10%;
+                background-size: 23% auto;
+            }
+            .asideSchrift
+            {
+                margin-bottom: 0px;
+                margin-top: 5px;
+
+            }
+            .MainBoxElement
+            {
+                width: 85%;
+                padding-left: 5%;
+                padding-right: 10%;
+            }
+
+                /* Über uns */
+            #scrollMarkeAbout
+            {
+                margin-left: 20%;
+                width: 80%;
+            }
+			#scrollMarkeHelfer
+			{
+				margin-left: 20%;
+				width: 80%;
+			}
+			
+            #ueberUnsArticle
+            {
+               background: url('Fonts/Bilder/Backgrounds/Transparente/0.png');
+                background-repeat: no-repeat;
+                background-position: 100% 5%;
+                background-size: 15% auto;
+            }
+            /* Includes */
+                /* Location */
+            #locationBox
+            {
+                padding-bottom: 50px;
+            }
+			#scrollMarkeBildergalerie
+            {
+                margin-left: 20%;
+                width: 80%;
+            }
+            #galerieBox
+            {
+			
+                padding-left: 200px;
+            }
+            #anfahrtskarte
+            {
+                transition: all 0.5s ease-in-out;
+                width: 100%;
+                padding-left: 0%;
+                filter: opacity(0.8);
+
+            }
+            #anfahrtskarte:hover
+            {
+                filter: opacity(1);
+            }
+
+                /* Events */
+
+            #eventBannerMain
+            {
+                width: 95%;
+                padding-right: 5%;
+                float: left;
+            }
+            #eventBannerDescrption
+            {
+                width: 100%;
+                float: left;
+            }
+            #counterBox
+            {
+                clear: both;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 30px;
+            }
+
+                    /* Bandit-CSS-Code*/
+            #banditContainer
+            {
+                height: 100px;
+                width: 100%;
+                margin-left: 10%;
+            }
+            .banditStelle
+            {
+                height: 100px;
+                width: 75px;
+                margin-right: 0px;
+                padding-left: 0px;
+                float: left;
+                overflow: hidden;
+                position: relative;
+                text-align: center;
+            }
+            .banditStelle p
+            {
+                width: 75px;
+                height: 100px;
+                font-size: 60pt;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                text-align: center;
+                font-family: 'Slabo 27px', serif;
+                font-family: 'Raleway', sans-serif;
+                font-family: 'Poiret One', cursive;
+                text-shadow: 0px 1px 3px rgba(60, 60, 60, 0.9)
+            }
+            .speedH
+            {
+                transition: all 0.3s ease-in-out;
+            }
+            .speedM
+            {
+                transition: all 0.6s ease-in-out;
+            }
+            .speedL
+            {
+                transition: all 1.2s ease-in-out;
+            }
+            #banditParameter
+            {
+                display: none;
+            }
+
+
+
+            /* mainFooter*/
+
+
+            footer
+            {
+                width: 60%;
+                padding-left: 20%;
+                padding-right: 20%;
+                background: url('Fonts/Fonts/Bilder/Backgrounds/Transparente/60.png');
+                margin-top: 80px;
+            }
+            footer section
+            {
+                width: 100%;
+                height: 50px;
+            }
+            footer section
+            {
+                width: 100%;
+            }
+            #logoListe
+            {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                height: auto;
+
+
+            }
+            #footerLinksListe
+            {
+                background-color: rgba(101, 70, 70, 0.2);
+                color: RGBA(8, 8, 8, 0.52);
+                width: 90%;
+                padding-left: 5%;
+                padding-right:5%;
+                padding-top: 50px;
+                float: left;
+            }
+
+            #footerLinksListe a
+            {
+                margin-right: 2%;
+                color: RGBA(8, 8, 8, 0.52);
+            }
+
+            #footerLinksListe div
+            {
+                width: 100%;
+                height: 20px;
+                padding-bottom: 40px;
+                padding-top: 40px;
+                text-align: center;
+            }
+
+            #footerSponsorenTitel
+            {
+                font-size: 0.9em;
+            }
+            .SponsorIcon
+            {
+                width:  40%;
+                padding-right: 10%;
+                padding-bottom: 30px;
+                vertical-align: middle;
+
+            }
+            .SponsorIconL
+            {
+                width:  40%;
+                padding-right: 0%;
+                padding-bottom: 30px;
+                vertical-align: middle;
+
+            }
+            .SponsorIconLR
+            {
+                width:  40%;
+                padding-right: 0%;
+                padding-bottom: 30px;
+                vertical-align: middle;
+
+            }
+
+            #hochsrollbuttonContainer
+            {
+                position: fixed;
+                bottom: 50px;
+                right: 50px;
+            }
+            #hochsrollbutton
+            {
+                width:  100%;
+                height: 100%;
+                width:  70px;
+                height: 70px;
+            }
+
+            #scrollMarkeSpeisenGetraenke
+            {
+                margin-left: 20%;
+                width: 80%;
+            }
+
+
+/*  ##############################################################################################     */
+/*  #####################################     Code Tablets   #####################################     */
+/*  ##############################################################################################     */
+
+
+@media only screen and (min-width: 800px)
+{
+
+            #headerIconBar
+            {
+                display: block;
+                position: absolute;
+                top: 50px;
+                right: 20%;
+
+                width: 140px;
+                height: 40px;
+
+                margin-top:    0;
+                margin-right:  0;
+                margin-left:   0;
+                margin-bottom: 0;
+
+                padding: 10px;
+
+                z-index: 11;
+
+                background-image: url('Fonts/Bilder/Backgrounds/Transparente/60.png');
+                background-repeat: repeat;
+                background-position: center;
+                background-size:  auto 100%;
+
+            }
+            /* mainHeader */
+            #primeHeader
+            {
+                position: absolute;
+                top: 50px;
+                width: 60%;
+                height: 400px;
+
+                padding-top:    50px;
+                padding-right:  20%;
+                padding-left:   20%;
+                padding-bottom: 90px;
+
+                /*background-image: url('Fonts/Bilder/Backgrounds/headerBackground.png');*/
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size:  100% auto;
+            }
+            #headerLogo
+            {
+                position: absolute;
+                top: 50px;
+                left: 20%;
+
+                width: 250px;
+                height: 250px;
+
+
+                background-image: url('Fonts/Bilder/Logos/campusBeach.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:  auto 100%;
+
+                z-index: 10;
+
+            }
+            
+            .headerWechsel
+            {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 450px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:  120% auto;
+                box-shadow: inset 0px 0 30px 0px rgb(20, 20, 20);
+            }
+            /* Navigation */
+            nav
+            {
+                position: relative;
+                width: 60%;
+                height: 30px;
+
+                padding-top:    20px;
+                padding-right:  20%;
+                padding-left:   20%;
+                padding-bottom: 40px;
+                transition: background 0.5s ease-in-out;
+                background-image: url("Fonts/Bilder/Backgrounds/Transparente/100zu95.png");
+                z-index: 99;
+            }
+            ul
+            {
+                padding-left: 50px;
+                width: 100%;
+                padding: 0;
+            }
+            li
+            {
+                float: left;
+                width: auto;
+                list-style: none;
+                margin-left: 0;
+                margin-right: 4%;
+                padding: 0;
+                cursor: pointer;
+
+                font-size: 1.2em;
+
+            }
+            
+            #eventBannerMain
+            {
+                width: 45%;
+                padding-right: 5%;
+                float: left;
+            }
+            #eventBannerDescrption
+            {
+                width: 50%;
+            }
+            #scrollMarkeAbout
+            {
+                margin-left: 20%;
+                width: 60%;
+            }
+            
+            #scrollMarkeSpeisenGetraenke
+            {
+                margin-left: 20%;
+                width: 60%;
+            }             
+
+            #scrollMarkeEvents
+            {
+                margin-top: 550px;
+                margin-left: 20%;
+                width: 60%;
+            }
+                         
+            #scrollMarkeLocation
+            {
+                margin-left: 20%;
+                width: 60%;
+            }                         
+            #locationArticle
+            {
+                background: url('Fonts/Bilder/fahne.png');
+                background-repeat: no-repeat;
+                background-position: 0% 10%;
+                background-size: 20% auto;
+            }                                             
+            #neuigkeitenArticle
+            {
+                background: url('Fonts/Bilder/palme.png');
+                background-repeat: no-repeat;
+                background-position: 0% 10%;
+                background-size: 23% auto;
+            }
+                                                                                 
+            #ueberUnsArticle
+            {
+               background: url('Fonts/Bilder/kokosnuss.png');
+                background-repeat: no-repeat;
+                background-position: 100% 5%;
+                background-size: 15% auto;
+            }
+             #banditContainer
+            {
+                height: 100px;
+                width: 50%;
+                margin-left: 30%;
+            }
+              
+            .SponsorIcon
+            {
+                width:  20%;
+                padding-right: 5%;
+                padding-bottom: 30px;
+                vertical-align: middle;
+
+            }
+            .SponsorIconL
+            {
+                width:  20%;
+                padding-right: 0%;
+                padding-bottom: 30px;
+                vertical-align: middle;
+
+            }
+            .SponsorIconLR
+            {
+                width:  20%;
+                padding-right: 5%;
+                padding-bottom: 30px;
+                vertical-align: middle;
+
+            }
+                         
+            #footerLinksListe
+            {
+                background-color: rgba(101, 70, 70, 0.2);
+                color: RGBA(8, 8, 8, 0.52);
+                width: 60%;
+                padding-left: 20%;
+                padding-right: 20%;
+                padding-top: 50px;
+                float: left;
+            }
+            
+            #hochsrollbuttonContainer
+            {
+                position: fixed;
+                bottom: 50px;
+                right: 50px;
+            }
+            #hochsrollbutton
+            {
+                width:  100%;
+                height: 100%;
+                width:  50px;
+                height: 50px;
+            }
+}
+
+/*  ##############################################################################################     */
+/*  #####################################     Code Desktops   ####################################     */
+/*  ##############################################################################################     */
+
+
+@media only screen and (min-width: 1700px)
+{
+
+}
